@@ -22,6 +22,8 @@ request.onerror = function (event) {
 };
 
 function saveRecord(record) {
+
+    console.log(record);
   // open a transaction on the pending object store in the budget db with readwrite access
   const transaction = db.transaction(["pending"], "readwrite");
 
